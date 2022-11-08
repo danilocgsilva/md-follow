@@ -1,2 +1,2 @@
-build/lib/md_follow/__main__.py
-md_follow.egg-info/
+build/lib/md_follow
+md_follow.egg-info
