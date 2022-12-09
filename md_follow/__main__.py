@@ -1,14 +1,16 @@
-import markdown
 import os
 import argparse
+from md_follow.GenerateHtmlPage import GenerateHtmlPage
 
 def generateHtml(markdownCandidate, documentation_folder):
     
     print("The file " + markdownCandidate + " will be converted to a html file.")
+
+    generateHtmlPage = GenerateHtmlPage()
     
     with open(markdownCandidate, 'r') as file:
         text = file.read()
-        html = markdown.markdown(text)
+        html = generateHtmlPage.generate(text)
     
     file_name_base = markdownCandidate + ".html"
     if documentation_folder:

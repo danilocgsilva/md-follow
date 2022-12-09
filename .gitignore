@@ -1,2 +1,4 @@
 build/lib/md_follow
 md_follow.egg-info
+md_follow/__pycache__
+test/__pycache__
