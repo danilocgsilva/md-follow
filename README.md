@@ -23,3 +23,8 @@ Optionally, you may want to create a documentation folder to exclusivelly deposi
 ```
 mdfollow --documentation-folder
 ```
+
+You can add a title to the document
+```
+mdfollow --title "My Document Title"
+```
